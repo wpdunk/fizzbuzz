@@ -14,8 +14,12 @@ describe 'fizzbuzz' do
     expect(fizzbuzz(15)).to eq 'fizzbuzz'
   end
 
-  it 'returns 39 when passed 39' do
-    expect(fizzbuzz(39)).to eq 39
+  it 'returns 7 when passed 7' do
+    expect(fizzbuzz(7)).to eq 7
+  end
+
+  it 'returns ERROR when passed "text"' do
+    expect(fizzbuzz("text")).to eq "ERROR"
   end
 
 end
